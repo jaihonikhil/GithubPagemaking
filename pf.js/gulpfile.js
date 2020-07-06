@@ -12,16 +12,7 @@ var gulp = require('gulp'),
     jsonfile = require('jsonfile'),
     inquirer = require("inquirer"),
     fs = require('fs');
-var gulp        = require('gulp');
-var deploy      = require('gulp-gh-pages');
 
-/**
- * Push build to gh-pages
- */
-gulp.task('deploy', function () {
-  return gulp.src("./dist/**/*")
-    .pipe(deploy())
-});
 gulp.task('clean', function(cb) {
     del('lib/**/*.*', cb);
 });
