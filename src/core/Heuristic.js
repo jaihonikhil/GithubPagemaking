@@ -12,6 +12,7 @@ module.exports = {
    */
   manhattan: function(dx, dy) {
       return dx + dy;
+      //return Math.sqrt(2)*Math.min(dx,dy)+(dx+dy-2*Math.min(dx,dy));
   },
 
   /**
